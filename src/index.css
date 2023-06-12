@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Poppins:wght@300;400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html {
+  /* font-size: 62.5%; */
+  overflow-x: hidden;
+}
+body {
+  max-width: 1920px;
+  background-color: #0f0e0e;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+label {
+  color: #f7f7f7;
+}
