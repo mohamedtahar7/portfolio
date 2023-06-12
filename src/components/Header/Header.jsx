@@ -2,8 +2,6 @@ import React from "react";
 import MTwhite from "../../assets/logo white.png";
 import { useState, useEffect, useRef } from "react";
 import "./Header.css";
-import { motion } from "framer-motion";
-import { navVariants } from "../../../utils/motion";
 import { RiCloseFill } from "react-icons/ri";
 import { CgMenu } from "react-icons/cg";
 import emailjs from "@emailjs/browser";
@@ -11,7 +9,7 @@ const Header = () => {
   const [hireOpen, setHireOpen] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [activeNav, setActiveNav] = useState(false);
-  const [successReq, setSuccessReq] = useState(false);
+  // const [successReq, setSuccessReq] = useState(false);
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -45,10 +43,8 @@ const Header = () => {
   };
   return (
     <div className="flex justify-center">
-      <motion.nav
-        variants={navVariants}
-        initial="hidden"
-        whileInView="show"
+      <nav
+        data-aos="fade-down"
         className={`${
           !activeNav ? "bg-none" : "bg-[#070606]"
         } fixed drop-shadow-lg w-full z-10 flex transition-all items-center justify-between py-3 md:px-24 px-4`}
@@ -202,14 +198,14 @@ const Header = () => {
           </div>
         </div>
         {/* Success request msg */}
-        <div
+        {/* <div
           className={`bg-green-500 absolute ${
             successReq ? "top-5" : "-top-52"
           } transition-all duration-300 left-[50%] translate-x-[-50%] text-center p-4 rounded-xl `}
         >
           <h4 className="text-white text-2xl">Request Sent Successfully ✅</h4>
-        </div>
-      </motion.nav>
+        </div> */}
+      </nav>
     </div>
   );
 };

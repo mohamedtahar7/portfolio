@@ -3,14 +3,7 @@ import "./Hero.css";
 import Coding from "../../assets/coding.svg";
 import { AiFillHtml5 } from "react-icons/ai";
 import { IoLogoCss3 } from "react-icons/io";
-import { motion } from "framer-motion";
-import { staggerContainer } from "../../../utils/motion";
-import {
-  SiTailwindcss,
-  SiJavascript,
-  SiReact,
-  SiNextdotjs,
-} from "react-icons/si";
+import { SiTailwindcss, SiJavascript, SiReact } from "react-icons/si";
 const Hero = () => {
   return (
     <section className="flex justify-center">
