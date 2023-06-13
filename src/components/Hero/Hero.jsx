@@ -1,5 +1,4 @@
 import React from "react";
-import "./Hero.css";
 import Coding from "../../assets/coding.svg";
 import { AiFillHtml5 } from "react-icons/ai";
 import { IoLogoCss3 } from "react-icons/io";
@@ -9,11 +8,11 @@ const Hero = () => {
   return (
     <section className="flex justify-center">
       <div className="hero md:flex-row flex-col flex items-center gap-5 py-28 sm:py-24 md:px-28 px-10">
-        <div className="hero-text">
+        <div className="text-[#f7f7f7]">
           <h1 className="text-[3.5rem] font-medium leading-tight">
             Hi, I am <br /> Mohamed Tahar
           </h1>
-          <h4 className="mt-4 hero-description text-3xl font-normal">
+          <h4 className="mt-4 text-[#c0c0c0] text-3xl font-normal">
             A Front-End Web Developer
           </h4>
           <div className="flex mt-5 items-center flex-row gap-3">
@@ -34,7 +33,7 @@ const Hero = () => {
           </div>
           <a
             className="py-3 px-6 xl:w-[50%] lg:w-[60%] md:w-[70%] w-[70%] mt-5 rounded-lg transition flex gap-3 items-center bg-neutral-600 hover:bg-neutral-800"
-            href="/src/assets/Mohamed Tahar Resume.pdf"
+            href="https://drive.google.com/file/d/1Ykn1cxg0DQ7DwygvI-BPLbM4e4DqSqUA/view"
             download="Resume"
           >
             <TbDownload size={25} className="text-[#f7f7f7]" />

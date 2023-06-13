@@ -6,7 +6,7 @@ import Omnifood from "../../../public/projects imgs/omnifood.jpg";
 const Projects = () => {
   return (
     <section id="projects" className="py-12 sm:px-20 md:px-28 px-10">
-      <h1 className="projects-header text-center text-3xl">My Projects</h1>
+      <h1 className="text-[#f7f7f7] text-center text-3xl">My Projects</h1>
       <div className=" grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1  gap-10 mt-10">
         <Card
           img="/projects imgs/movimania.jpg"

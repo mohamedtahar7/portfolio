@@ -1,7 +1,6 @@
 import React from "react";
 import MTwhite from "../../assets/logo white.png";
 import { useState, useEffect, useRef } from "react";
-import "./Header.css";
 import { RiCloseFill } from "react-icons/ri";
 import { CgMenu } from "react-icons/cg";
 import emailjs from "@emailjs/browser";
@@ -61,19 +60,19 @@ const Header = () => {
         <div className="lg:flex hidden items-center gap-16">
           <a
             href="#about"
-            className="header-text text-xl font-normal hover:text-white transition-all"
+            className="text-[#c0c0c0] text-xl font-normal hover:text-white transition-all"
           >
             About Me
           </a>
           <a
             href="#projects"
-            className="header-text text-xl font-normal hover:text-white transition-all"
+            className="text-[#c0c0c0] text-xl font-normal hover:text-white transition-all"
           >
             Projects
           </a>
           <a
             href="#contact"
-            className="header-text text-xl font-norma hover:text-white transition-all"
+            className="text-[#c0c0c0] text-xl font-norma hover:text-white transition-all"
           >
             Contact
           </a>
@@ -165,21 +164,21 @@ const Header = () => {
           <a
             onClick={() => setIsOpen(false)}
             href="#about"
-            className="header-text text-xl font-normal hover:text-white transition-all"
+            className="text-[#c0c0c0] text-xl font-normal hover:text-white transition-all"
           >
             About Me
           </a>
           <a
             onClick={() => setIsOpen(false)}
             href="#projects"
-            className="header-text text-xl font-normal hover:text-white transition-all"
+            className="text-[#c0c0c0] text-xl font-normal hover:text-white transition-all"
           >
             Projects
           </a>
           <a
             onClick={() => setIsOpen(false)}
             href="#contact"
-            className="header-text text-xl font-norma hover:text-white transition-all"
+            className="text-[#c0c0c0] text-xl font-norma hover:text-white transition-all"
           >
             Contact
           </a>

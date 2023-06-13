@@ -1,6 +1,5 @@
 import React from "react";
 import Tahar from "../../assets/me.jpeg";
-import "./About.css";
 const About = () => {
   return (
     <section className="py-12 sm:px-20 md:px-28 px-10">

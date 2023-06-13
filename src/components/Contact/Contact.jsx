@@ -4,8 +4,6 @@ import { FiMail } from "react-icons/fi";
 import Input from "../Input";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
-import "./Contact.css";
-
 const Contact = () => {
   const form = useRef();
   const sendEmail = (e) => {
