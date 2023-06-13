@@ -3,6 +3,7 @@ import "./Hero.css";
 import Coding from "../../assets/coding.svg";
 import { AiFillHtml5 } from "react-icons/ai";
 import { IoLogoCss3 } from "react-icons/io";
+import { TbDownload } from "react-icons/tb";
 import { SiTailwindcss, SiJavascript, SiReact } from "react-icons/si";
 const Hero = () => {
   return (
@@ -31,6 +32,14 @@ const Hero = () => {
             />
             <SiReact className="hover:-translate-y-2 transition" size={40} />
           </div>
+          <a
+            className="py-3 px-6 xl:w-[50%] lg:w-[60%] md:w-[70%] w-[70%] mt-5 rounded-lg transition flex gap-3 items-center bg-neutral-600 hover:bg-neutral-800"
+            href="/src/assets/Mohamed Tahar Resume.pdf"
+            download="Resume"
+          >
+            <TbDownload size={25} className="text-[#f7f7f7]" />
+            Download CV
+          </a>
         </div>
         <div>
           <img
