@@ -17,15 +17,16 @@ const Header = () => {
 
     emailjs
       .sendForm(
-        "service_alw2bdj",
-        "template_m8itmg1",
+        "service_pipn973",
+        "template_fuq4wq9",
         form.current,
-        "wBPtSopVRqmmnpaTC"
+        "v3KrR0okDiJBE9mfU"
       )
       .then(
         (result) => {
           console.log(result.text);
           e.target.reset();
+          setHireOpen(false);
         },
         (error) => {
           console.log(error.text);
@@ -37,10 +38,6 @@ const Header = () => {
       window.scrollY > 60 ? setActiveNav(true) : setActiveNav(false);
     });
   }, []);
-  const handleRequest = () => {
-    setHireOpen(false);
-    sendEmail();
-  };
   return (
     <div className="flex justify-center">
       <nav
@@ -122,10 +119,7 @@ const Header = () => {
           </h4>
           <form
             ref={form}
-            onSubmit={() => {
-              sendEmail();
-              setHireOpen(false);
-            }}
+            onSubmit={sendEmail}
             className="flex flex-col gap-5 p-16"
           >
             <input
@@ -151,7 +145,11 @@ const Header = () => {
               placeholder="Project Description"
             ></textarea>
             <button
-              onClick={sendEmail}
+              onClick={(e) => {
+                sendEmail();
+                e.target.reset();
+                setHireOpen(false);
+              }}
               className="py-2 px-4 bg-[#fff] text-neutral-600 hover:bg-neutral-300 transition sm:w-1/2 w-full text-center rounded-lg"
             >
               Send Request

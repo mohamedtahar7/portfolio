@@ -1,9 +1,10 @@
 import React from "react";
 
-const Input = ({ label, type }) => {
+const Input = ({ label, type, name }) => {
   return (
     <div className="relative">
       <input
+        name={name}
         type={type}
         required
         className="block  rounded-md px-6 pt-6 pb-1 w-full text-xl text-[#f7f7f7] bg-neutral-600 appearance-none focus:outline-none focus:ring-0 peer"
