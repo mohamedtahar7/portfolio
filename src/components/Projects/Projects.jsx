@@ -1,6 +1,5 @@
 import React from "react";
 import Card from "../Card/Card";
-import "./Projects.css";
 import Netflix from "../../../public/projects imgs/netflix2.jpg";
 import Omnifood from "../../../public/projects imgs/omnifood.jpg";
 const Projects = () => {

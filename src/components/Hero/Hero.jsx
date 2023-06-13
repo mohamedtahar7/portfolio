@@ -35,6 +35,7 @@ const Hero = () => {
             className="py-3 px-6 xl:w-[50%] lg:w-[60%] md:w-[70%] w-[70%] mt-5 rounded-lg transition flex gap-3 items-center bg-neutral-600 hover:bg-neutral-800"
             href="https://drive.google.com/file/d/1Ykn1cxg0DQ7DwygvI-BPLbM4e4DqSqUA/view"
             download="Resume"
+            target="_blank"
           >
             <TbDownload size={25} className="text-[#f7f7f7]" />
             Download CV
