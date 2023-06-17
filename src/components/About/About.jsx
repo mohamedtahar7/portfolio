@@ -3,9 +3,13 @@ import Tahar from "../../assets/me.jpeg";
 const About = () => {
   return (
     <section id="about" className="py-12 sm:px-20 md:px-28 px-10">
-      <div className="flex sm:flex-row items-center flex-col gap-8 ">
-        <div className="">
-          <img className="lg:w-[1024px] rounded-xl" src={Tahar} alt="" />
+      <div className="flex md:flex-row items-center flex-col gap-8 ">
+        <div className="md:block flex justify-center">
+          <img
+            className="lg:w-[1024px] w-[80%] rounded-xl"
+            src={Tahar}
+            alt=""
+          />
         </div>
         <div className="lg:w-[200%]  h-full">
           <h1 className="text-[#f7f7f7] text-2xl font-medium mb-5">About Me</h1>
