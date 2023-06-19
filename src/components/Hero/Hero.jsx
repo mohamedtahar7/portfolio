@@ -32,7 +32,7 @@ const Hero = () => {
             <SiReact className="hover:-translate-y-2 transition" size={40} />
           </div>
           <a
-            className="py-3 px-6 mt-5 rounded-lg transition flex gap-3 items-center bg-neutral-600 hover:bg-neutral-800"
+            className="py-3 w-fit px-6 mt-5 rounded-lg transition flex gap-3 items-center bg-neutral-600 hover:bg-neutral-800"
             href="https://drive.google.com/file/d/1Ykn1cxg0DQ7DwygvI-BPLbM4e4DqSqUA/view"
             download="Resume"
             target="_blank"
