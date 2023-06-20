@@ -2,7 +2,7 @@ import React from "react";
 import Tahar from "../../assets/me.jpeg";
 const About = () => {
   return (
-    <section id="about" className="py-12 sm:px-20 md:px-28 px-10">
+    <section id="about" className="pb-12 pt-8 sm:px-20 md:px-28 px-10">
       <div className="flex md:flex-row items-center flex-col gap-8 ">
         <div className="md:block flex justify-center">
           <img

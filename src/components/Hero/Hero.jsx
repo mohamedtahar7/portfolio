@@ -6,14 +6,15 @@ import { TbDownload } from "react-icons/tb";
 import { SiTailwindcss, SiJavascript, SiReact } from "react-icons/si";
 const Hero = () => {
   return (
-    <section className="flex justify-center">
-      <div className="hero md:flex-row flex-col flex items-center gap-5 py-28 sm:py-24 md:px-28 px-10">
-        <div className="text-[#f7f7f7]">
-          <h1 className="text-[3.5rem] font-medium leading-tight">
-            Hi, I am <br /> Mohamed Tahar
+    <section className="flex pt-6 justify-center">
+      <div className="hero md:flex-row flex-col flex items-center gap-5 py-24 sm:py-24 md:px-28 px-10">
+        <div className="text-[#f7f7f7] sm:w-[50vw]">
+          <h1 className="text-[3.4rem] font-medium leading-tight">
+            Unleashing Web <br />
+            Excellence
           </h1>
-          <h4 className="mt-4 text-[#c0c0c0] text-3xl font-normal">
-            A Front-End Web Developer
+          <h4 className="mt-4 text-[#c0c0c0] text-2xl font-normal">
+            Creating Engaging Web Experiences
           </h4>
           <div className="flex mt-5 items-center flex-row gap-3">
             <AiFillHtml5
@@ -41,7 +42,7 @@ const Hero = () => {
             Download CV
           </a>
         </div>
-        <div>
+        <div className="">
           <img
             className="sm:w-[520px] w-[640px] sm:block hidden"
             src={Coding}

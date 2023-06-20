@@ -102,8 +102,8 @@ const Header = () => {
         </div>
 
         <div
-          className={`absolute z-30 h-[100vh] sm:w-[50%] sm:h-[55vh] md:h-[80vh] lg:h-[95vh] w-full sm:top-0  ${
-            hireOpen ? "sm:left-[50%] sm:translate-x-[-50%]" : "sm:left-[100%]"
+          className={`absolute z-30 h-fit overflow-y-auto w-fit sm:top-0  ${
+            hireOpen ? "sm:left-[50%] sm:translate-x-[-50%]" : "sm:left-[200%]"
           } transition-all duration-300 ${
             hireOpen ? "top-0 left-0" : "top-0 left-[100%]"
           } py-4 bg-neutral-600 rounded-lg`}
@@ -143,16 +143,18 @@ const Header = () => {
               rows="10"
               placeholder="Project Description"
             ></textarea>
-            <button
-              onClick={(e) => {
-                sendEmail();
-                e.target.reset();
-                setHireOpen(false);
-              }}
-              className="py-2 px-4 bg-[#fff] text-neutral-600 hover:bg-neutral-300 transition sm:w-1/2 w-full text-center rounded-lg"
-            >
-              Send Request
-            </button>
+            <div className="text-center">
+              <button
+                onClick={(e) => {
+                  sendEmail();
+                  e.target.reset();
+                  setHireOpen(false);
+                }}
+                className="py-2 px-4 bg-[#fff] text-neutral-600 hover:bg-neutral-300 transition sm:w-1/2 w-full text-center rounded-lg"
+              >
+                Send Request
+              </button>
+            </div>
           </form>
         </div>
         {/* Mobile Nav */}
