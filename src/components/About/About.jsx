@@ -16,11 +16,11 @@ const About = () => {
           <p className="sm:text-lg md:text-sm lg:text-lg text-[#c0c0c0]">
             I am Mohamed Tahar, a front end web developer with a passion for
             creating dynamic and engaging web experiences, with a strong
-            foundation in HTML, CSS and JavaScript. <br /> I am dedicated to
-            delivering high quality code and ensuring the best possible user
-            experience. With a keen eye for detail and a commitment to staying
-            up to date with the latest trends and technologies in web
-            development.
+            foundation in HTML, CSS, JavaScript, and its framework React JS.{" "}
+            <br /> I am dedicated to delivering high quality code and ensuring
+            the best possible user experience. With a keen eye for detail and a
+            commitment to staying up to date with the latest trends and
+            technologies in web development.
           </p>
         </div>
       </div>
