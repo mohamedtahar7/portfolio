@@ -1,6 +1,5 @@
 import React from "react";
-import MTWhite from "../assets/logo white.png";
-import { BsGithub, BsLinkedin } from "react-icons/bs";
+import { BsGithub, BsLinkedin, BsInstagram } from "react-icons/bs";
 const Footer = () => {
   return (
     <footer className="sm:px-28 mt-5 px-10 bg-[#070606]">
@@ -20,6 +19,12 @@ const Footer = () => {
             target="_blank"
           >
             <BsLinkedin
+              size={40}
+              className="text-[#f7f7f7] hover:text-[#b7b7b7] transition "
+            />
+          </a>
+          <a href="https://www.instagram.com/mohamed_.tahar/" target="_blank">
+            <BsInstagram
               size={40}
               className="text-[#f7f7f7] hover:text-[#b7b7b7] transition "
             />
