@@ -3,35 +3,11 @@ import MTwhite from "../../assets/logo white.png";
 import { useState, useEffect, useRef } from "react";
 import { RiCloseFill } from "react-icons/ri";
 import { CgMenu } from "react-icons/cg";
-import emailjs from "@emailjs/browser";
 const Header = () => {
-  const [hireOpen, setHireOpen] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [activeNav, setActiveNav] = useState(false);
   // const [successReq, setSuccessReq] = useState(false);
   const form = useRef();
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_pipn973",
-        "template_fuq4wq9",
-        form.current,
-        "v3KrR0okDiJBE9mfU"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          e.target.reset();
-          setHireOpen(false);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
   useEffect(() => {
     window.addEventListener("scroll", () => {
       window.scrollY > 60 ? setActiveNav(true) : setActiveNav(false);
@@ -46,24 +22,27 @@ const Header = () => {
         } fixed drop-shadow-lg w-full z-10 flex transition-all items-center justify-between py-3 md:px-24 px-4`}
       >
         <a href="#" className="flex items-center gap-3">
-          <img
-            onClick={() => {
-              setSuccessReq(true);
-              setTimeout(setSuccessReq(false), 2000);
-            }}
-            className={`w-24 ${activeNav ? "block" : "hidden"}`}
-            src={MTwhite}
-            alt="logo"
-          />
-          <img
-            onClick={() => {
-              setSuccessReq(true);
-              setTimeout(setSuccessReq(false), 2000);
-            }}
-            className={`w-24 ${!activeNav ? "block" : "hidden"}`}
-            src="/src/assets/logo black.png"
-            alt="logo"
-          />
+          {activeNav ? (
+            <img
+              onClick={() => {
+                setSuccessReq(true);
+                setTimeout(setSuccessReq(false), 2000);
+              }}
+              className={`w-24 ${activeNav ? "block" : "hidden"}`}
+              src="/src/assets/logo white.png"
+              alt="logo"
+            />
+          ) : (
+            <img
+              onClick={() => {
+                setSuccessReq(true);
+                setTimeout(setSuccessReq(false), 2000);
+              }}
+              className={`w-24 ${!activeNav ? "block" : "hidden"}`}
+              src="/src/assets/logo black.png"
+              alt="logo"
+            />
+          )}
           {/* <h1 className="text-4xl">Mohamed Tahar</h1> */}
         </a>
         <div
