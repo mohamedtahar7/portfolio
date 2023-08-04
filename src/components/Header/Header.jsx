@@ -29,7 +29,7 @@ const Header = () => {
                 setTimeout(setSuccessReq(false), 2000);
               }}
               className={`w-24 ${activeNav ? "block" : "hidden"}`}
-              src="/src/assets/logo white.png"
+              src="https://i.postimg.cc/pLwjwsM7/logo-white.png"
               alt="logo"
             />
           ) : (
@@ -39,7 +39,7 @@ const Header = () => {
                 setTimeout(setSuccessReq(false), 2000);
               }}
               className={`w-24 ${!activeNav ? "block" : "hidden"}`}
-              src="/src/assets/logo black.png"
+              src="https://i.postimg.cc/d0GCwGq0/logo-black.png"
               alt="logo"
             />
           )}
