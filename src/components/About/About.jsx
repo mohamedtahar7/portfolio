@@ -6,14 +6,14 @@ const About = () => {
       <div className="flex md:flex-row items-center flex-col gap-8 ">
         <div className="md:block flex justify-center">
           <img
-            className="lg:w-[1024px] w-[80%] rounded-xl"
+            className="lg:w-[1024px] sm:w-[80%] rounded-xl"
             src={Tahar}
             alt=""
           />
         </div>
         <div className="lg:w-[200%]  h-full">
-          <h1 className="text-[#f7f7f7] text-2xl font-medium mb-5">About Me</h1>
-          <p className="sm:text-lg md:text-sm lg:text-lg text-[#c0c0c0]">
+          <h1 className="text-black text-2xl font-medium mb-5">About Me</h1>
+          <p className="sm:text-lg md:text-sm lg:text-lg text-gray-700">
             I am Mohamed Tahar, a front end web developer with a passion for
             creating dynamic and engaging web experiences, with a strong
             foundation in HTML, CSS, JavaScript, and its framework React JS.{" "}

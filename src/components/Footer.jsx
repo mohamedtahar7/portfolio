@@ -2,7 +2,7 @@ import React from "react";
 import { BsGithub, BsLinkedin, BsInstagram } from "react-icons/bs";
 const Footer = () => {
   return (
-    <footer className="sm:px-28 mt-5 px-10 bg-[#070606]">
+    <footer className="sm:px-28 mt-5 px-10 bg-[#407c87]">
       <div className="border-b-[1px] border-[#f7f7f7]">
         <div className="py-8">
           <h1 className="text-[#f7f7f7] text-4xl text-center">Follow Me</h1>

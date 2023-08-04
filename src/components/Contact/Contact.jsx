@@ -28,10 +28,8 @@ const Contact = () => {
   };
   return (
     <div id="contact" className="md:px-28 px-10 sm:py-16">
-      <div className="sm:p-20 p-8 bg-[#070606] drop-shadow-xl rounded-3xl">
-        <h1 className="text-3xl font-normal text-[#f7f7f7] mb-6">
-          Get In Touch
-        </h1>
+      <div className="sm:p-20 p-8 bg-[#407c87] drop-shadow-xl rounded-3xl">
+        <h1 className="text-3xl font-normal text-white mb-6">Get In Touch</h1>
         <form onSubmit={sendEmail} ref={form} className="flex flex-col gap-12">
           <div className="flex flex-col gap-12 sm:flex-row sm:gap-6 items-center">
             <div className="sm:w-1/2 w-full">
@@ -51,7 +49,7 @@ const Contact = () => {
               cols="30"
               rows="10"
               placeholder="Enter Your Message Here"
-              className="w-full rounded-md placeholder-neutral-200 text-[#f7f7f7] bg-neutral-600 p-6 text-2xl"
+              className="w-full rounded-md placeholder-gray-900 text-gray-900 bg-[#eef1f6] p-6 text-2xl"
             ></textarea>
           </div>
           <div className=" text-center">
@@ -60,7 +58,8 @@ const Contact = () => {
                 sendEmail();
                 e.target.reset();
               }}
-              className="px-10 py-3 text-xl rounded-full bg-neutral-700 transition hover:bg-neutral-900 text-[#f7f7f7]"
+              className="px-10 py-3 text-xl rounded-full bg-[#a5dbdd] transition hover:opacity-80
+               text-black"
             >
               Submit
             </button>
