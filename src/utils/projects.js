@@ -1,12 +1,5 @@
 export const projects = [
   {
-    img: "/projects imgs/movimania.jpg",
-    name: "MovieMania",
-    description: "MovieMania Website",
-    link: "https://moviemania-mohamedtahar.netlify.app/",
-    category: "Websites",
-  },
-  {
     img: "/projects imgs/omnifood.jpg",
     name: "Omnifood",
     description: "Restaurant Landing Page",
