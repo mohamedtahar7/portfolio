@@ -7,7 +7,7 @@ const About = () => {
         <div className="md:block flex justify-center">
           <img
             className="lg:w-[1024px] sm:w-[80%] rounded-xl"
-            src={"/src/assets/social-pfp.png"}
+            src={"https://i.postimg.cc/zvKHgGGz/social-pfp.png"}
             alt=""
           />
         </div>

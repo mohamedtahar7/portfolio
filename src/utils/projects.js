@@ -23,14 +23,14 @@ export const projects = [
   {
     img: "/projects imgs/aicradtedmedia.png",
     name: "AiCraftedMedia",
-    description: "AiCraftedMedia Landing Page",
+    description: "CraftedMedia Landing Page",
     link: "https://aicraftedmedia.com",
     category: "Landing Pages",
   },
   {
     img: "/projects imgs/dataware.jpg",
     name: "DataWarehouse",
-    description: "DataWarehouse Landing Page",
+    description: "Warehouse Landing Page",
     link: "https://datawarehouse-mohamedtahar.netlify.app/",
     category: "Landing Pages",
   },
