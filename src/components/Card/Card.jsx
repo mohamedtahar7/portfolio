@@ -22,7 +22,7 @@ const Card = ({ project }) => {
           target="_blank"
           className="flex text-lg py-2 px-4 bg-[#d3e1e2] w-fit rounded-lg text-black hover:opacity-90 transition gap-3 items-center"
         >
-          See More <BsArrowRight size={25} />
+          View More <BsArrowRight size={25} />
         </a>
         {/* <a
           href={link}

@@ -3,6 +3,7 @@ import MTwhite from "../../assets/logo white.png";
 import { useState, useEffect, useRef } from "react";
 import { RiCloseFill } from "react-icons/ri";
 import { CgMenu } from "react-icons/cg";
+import { Link } from "react-scroll";
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeNav, setActiveNav] = useState(false);
@@ -21,7 +22,14 @@ const Header = () => {
           !activeNav ? "bg-none" : "bg-[#407c87]"
         } fixed drop-shadow-lg w-full z-10 flex transition-all items-center justify-between py-3 md:px-24 px-4`}
       >
-        <a href="#" className="flex items-center gap-3">
+        <Link
+          to="hero"
+          spy={true}
+          smooth={true}
+          offset={-250}
+          duration={500}
+          className="flex cursor-pointer items-center gap-3"
+        >
           {activeNav ? (
             <img
               onClick={() => {
@@ -44,21 +52,42 @@ const Header = () => {
             />
           )}
           {/* <h1 className="text-4xl">Mohamed Tahar</h1> */}
-        </a>
+        </Link>
         <div
           className={`lg:flex ${
             activeNav ? "text-white" : "text-black"
           } hidden items-center gap-10`}
         >
-          <a href="#about" className="text-lg font-normal transition-all">
+          <Link
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+            className="text-lg cursor-pointer font-normal transition-all"
+          >
             About Me
-          </a>
-          <a href="#projects" className="text-lg font-normal transition-all">
+          </Link>
+          <Link
+            to="projects"
+            spy={true}
+            smooth={true}
+            offset={-40}
+            duration={500}
+            className="text-lg cursor-pointer font-normal transition-all"
+          >
             Projects
-          </a>
-          <a href="#contact" className="text-lg font-normal transition-all">
+          </Link>
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-10}
+            duration={500}
+            className="text-lg cursor-pointer font-normal transition-all"
+          >
             Contact
-          </a>
+          </Link>
         </div>
         <div className="lg:hidden block">
           {!isOpen ? (
@@ -81,27 +110,36 @@ const Header = () => {
             isOpen ? "top-16" : "-top-96"
           } absolute right-24 flex flex-col items-center z-20 transition-all duration-300 rounded-lg bg-[#407c87] py-6 px-10 gap-16`}
         >
-          <a
-            onClick={() => setIsOpen(false)}
-            href="#about"
-            className="text-white text-xl font-normal hover:text-white transition-all"
+          <Link
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+            className="text-lg text-white cursor-pointer font-normal transition-all"
           >
             About Me
-          </a>
-          <a
-            onClick={() => setIsOpen(false)}
-            href="#projects"
-            className="text-white text-xl font-normal hover:text-white transition-all"
+          </Link>
+          <Link
+            to="projects"
+            spy={true}
+            smooth={true}
+            offset={-40}
+            duration={500}
+            className="text-lg text-white cursor-pointer font-normal transition-all"
           >
             Projects
-          </a>
-          <a
-            onClick={() => setIsOpen(false)}
-            href="#contact"
-            className="text-white text-xl font-norma hover:text-white transition-all"
+          </Link>
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-10}
+            duration={500}
+            className="text-lg text-white cursor-pointer font-normal transition-all"
           >
             Contact
-          </a>
+          </Link>
         </div>
         {/* Success request msg */}
         {/* <div

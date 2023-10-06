@@ -1,12 +1,5 @@
 export const projects = [
   {
-    img: "/projects imgs/movimania.jpg",
-    name: "MovieMania",
-    description: "MovieMania Website",
-    link: "https://moviemania-mohamedtahar.netlify.app/",
-    category: "Websites",
-  },
-  {
     img: "/projects imgs/omnifood.jpg",
     name: "Omnifood",
     description: "Restaurant Landing Page",
@@ -28,11 +21,11 @@ export const projects = [
     category: "Landing Pages",
   },
   {
-    img: "/projects imgs/shopit.jpg",
-    name: "ShopIt",
-    description: "Ecommerce Website",
-    link: "https://shopit-mohamedtahar.netlify.app/",
-    category: "Ecommerce Websites",
+    img: "/projects imgs/aicradtedmedia.png",
+    name: "AiCraftedMedia",
+    description: "AiCraftedMedia Landing Page",
+    link: "https://aicraftedmedia.com",
+    category: "Landing Pages",
   },
   {
     img: "/projects imgs/dataware.jpg",

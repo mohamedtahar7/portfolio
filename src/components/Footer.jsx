@@ -23,12 +23,6 @@ const Footer = () => {
               className="text-[#f7f7f7] hover:text-[#b7b7b7] transition "
             />
           </a>
-          <a href="https://www.instagram.com/mohamed_.tahar/" target="_blank">
-            <BsInstagram
-              size={40}
-              className="text-[#f7f7f7] hover:text-[#b7b7b7] transition "
-            />
-          </a>
         </div>
       </div>
       <h2 className="text-center text-[#f7f7f7] p-6 shadow-2xl text-2xl">

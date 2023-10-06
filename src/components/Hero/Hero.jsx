@@ -6,7 +6,7 @@ import { TbDownload } from "react-icons/tb";
 import { SiTailwindcss, SiJavascript, SiReact } from "react-icons/si";
 const Hero = () => {
   return (
-    <section className="flex pt-6 justify-center">
+    <section id="hero" className="flex pt-6 justify-center">
       <div className="hero md:flex-row flex-col flex items-center gap-5 py-24 sm:py-24 md:px-28 px-10">
         <div className="sm:w-[50vw]">
           <h1 className="text-[3.4rem] text-[#000] font-medium leading-tight">
