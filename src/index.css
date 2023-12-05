@@ -8,9 +8,9 @@ html {
 }
 body {
   max-width: 1920px;
-  background-color: #0f0e0e;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
+  background-color: #f7f7f7;
 }
 label {
   color: #f7f7f7;

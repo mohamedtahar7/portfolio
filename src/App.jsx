@@ -6,7 +6,7 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer";
 function App() {
   return (
-    <div className="App bg-[#eef1f6] overflow-x-hidden">
+    <div className="App">
       <Header />
       <Hero />
       <About />

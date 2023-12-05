@@ -8,7 +8,7 @@ const Projects = () => {
   const [category, setCategory] = useState("All");
   return (
     <section id="projects" className="py-12 sm:px-20 md:px-28 px-10">
-      <h1 className="text-black font-medium text-center text-3xl">
+      <h1 className="text-blue-500 font-bold uppercase text-center text-3xl">
         My Projects
       </h1>
       <div className="flex md:flex-row flex-col items-center justify-center gap-6 mt-6">
@@ -35,7 +35,7 @@ const Projects = () => {
         </select>
       </div>
       {category === "All" && (
-        <div className=" grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1  gap-10 mt-10">
+        <div className="mt-8 flex flex-col gap-4">
           {projects.map((project, id) => (
             <Card project={project} />
           ))}

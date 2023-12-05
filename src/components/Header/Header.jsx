@@ -19,8 +19,8 @@ const Header = () => {
       <nav
         data-aos="fade-down"
         className={`${
-          !activeNav ? "bg-none" : "bg-[#407c87]"
-        } fixed drop-shadow-lg w-full z-10 flex transition-all items-center justify-between py-3 md:px-24 px-4`}
+          !activeNav ? "bg-none" : "bg-white"
+        } fixed drop-shadow-md w-full z-10 flex transition-all items-center justify-between py-6 md:px-24 px-4`}
       >
         <Link
           to="hero"
@@ -28,45 +28,21 @@ const Header = () => {
           smooth={true}
           offset={-250}
           duration={500}
-          className="flex cursor-pointer items-center gap-3"
+          className="cursor-pointer text-[#2d2e32] hover:opacity-80 transition text-xl font-semibold"
         >
-          {activeNav ? (
-            <img
-              onClick={() => {
-                setSuccessReq(true);
-                setTimeout(setSuccessReq(false), 2000);
-              }}
-              className={`w-24 ${activeNav ? "block" : "hidden"}`}
-              src="https://i.postimg.cc/pLwjwsM7/logo-white.png"
-              alt="logo"
-            />
-          ) : (
-            <img
-              onClick={() => {
-                setSuccessReq(true);
-                setTimeout(setSuccessReq(false), 2000);
-              }}
-              className={`w-24 ${!activeNav ? "block" : "hidden"}`}
-              src="https://i.postimg.cc/d0GCwGq0/logo-black.png"
-              alt="logo"
-            />
-          )}
-          {/* <h1 className="text-4xl">Mohamed Tahar</h1> */}
+          Mohamed Tahar
         </Link>
-        <div
-          className={`lg:flex ${
-            activeNav ? "text-white" : "text-black"
-          } hidden items-center gap-10`}
-        >
+        <div className={`lg:flex text-black hidden items-center gap-10`}>
           <Link
             to="about"
             spy={true}
             smooth={true}
             offset={-100}
             duration={500}
-            className="text-lg cursor-pointer font-normal transition-all"
+            className="text-lg text-[#2d2e32] hover:opacity-80 
+             font-semibold cursor-pointer transition-all"
           >
-            About Me
+            About
           </Link>
           <Link
             to="projects"
@@ -74,7 +50,8 @@ const Header = () => {
             smooth={true}
             offset={-40}
             duration={500}
-            className="text-lg cursor-pointer font-normal transition-all"
+            className="text-lg text-[#2d2e32] hover:opacity-80 
+             cursor-pointer font-semibold transition-all"
           >
             Projects
           </Link>
@@ -84,7 +61,8 @@ const Header = () => {
             smooth={true}
             offset={-10}
             duration={500}
-            className="text-lg cursor-pointer font-normal transition-all"
+            className="text-lg text-[#2d2e32] hover:opacity-80 
+             cursor-pointer font-semibold transition-all"
           >
             Contact
           </Link>
@@ -108,7 +86,7 @@ const Header = () => {
         <div
           className={`${
             isOpen ? "top-16" : "-top-96"
-          } absolute right-24 flex flex-col items-center z-20 transition-all duration-300 rounded-lg bg-[#407c87] py-6 px-10 gap-16`}
+          } absolute right-24 flex flex-col items-center z-20 transition-all duration-300 rounded-lg bg-blue-500 py-6 px-10 gap-16`}
         >
           <Link
             to="about"
@@ -116,9 +94,9 @@ const Header = () => {
             smooth={true}
             offset={-100}
             duration={500}
-            className="text-lg text-white cursor-pointer font-normal transition-all"
+            className="text-lg text-white cursor-pointer font-semibold transition-all"
           >
-            About Me
+            About
           </Link>
           <Link
             to="projects"
@@ -126,7 +104,7 @@ const Header = () => {
             smooth={true}
             offset={-40}
             duration={500}
-            className="text-lg text-white cursor-pointer font-normal transition-all"
+            className="text-lg text-white cursor-pointer font-semibold transition-all"
           >
             Projects
           </Link>
@@ -136,7 +114,7 @@ const Header = () => {
             smooth={true}
             offset={-10}
             duration={500}
-            className="text-lg text-white cursor-pointer font-normal transition-all"
+            className="text-lg text-white cursor-pointer font-semibold transition-all"
           >
             Contact
           </Link>

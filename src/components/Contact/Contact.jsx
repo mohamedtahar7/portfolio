@@ -4,6 +4,7 @@ import { FiMail } from "react-icons/fi";
 import Input from "../Input";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
+import { Mail } from "lucide-react";
 const Contact = () => {
   const form = useRef();
   const sendEmail = (e) => {
@@ -27,46 +28,23 @@ const Contact = () => {
       );
   };
   return (
-    <div id="contact" className="md:px-28 px-10 sm:py-16">
-      <div className="sm:p-20 p-8 bg-[#407c87] drop-shadow-xl rounded-3xl">
-        <h1 className="text-3xl font-normal text-white mb-6">Get In Touch</h1>
-        <form onSubmit={sendEmail} ref={form} className="flex flex-col gap-12">
-          <div className="flex flex-col gap-12 sm:flex-row sm:gap-6 items-center">
-            <div className="sm:w-1/2 w-full">
-              <Input name="first_name" type="text" label={"First Name"} />
-            </div>
-            <div className="sm:w-1/2 w-full">
-              <Input name="last_name" type="text" label={"Last Name"} />
-            </div>
+    <section id="contact" className="md:px-28 bg-white px-10 sm:py-16">
+      <h1 className="uppercase text-blue-500 font-bold text-lg">Contact</h1>
+      <h2 className="uppercase text-[#2D2E32] font-bold text-xl mt-4">
+        Feel free to reach out! Don't hesitate to get in touch! 👇
+      </h2>
+      <div className="mt-4">
+        <div className="flex items-center gap-5">
+          <div className="p-4 shadow-md w-fit rounded-full bg-white">
+            <Mail className="text-blue-500 h-8 w-8" />
           </div>
           <div>
-            <Input name="from_email" type={"email"} label={"Email"} />
+            <h2 className="text-lg text-[#2d2e32] font-bold">Mail</h2>
+            <h3 className="text-md text-[#767676]">mohamedtaahar@gmail.com</h3>
           </div>
-          <div>
-            <textarea
-              required
-              name="message"
-              cols="30"
-              rows="10"
-              placeholder="Enter Your Message Here"
-              className="w-full rounded-md placeholder-gray-900 text-gray-900 bg-[#eef1f6] p-6 text-2xl"
-            ></textarea>
-          </div>
-          <div className=" text-center">
-            <button
-              onClick={(e) => {
-                sendEmail();
-                e.target.reset();
-              }}
-              className="px-10 py-3 text-xl rounded-full bg-[#a5dbdd] transition hover:opacity-80
-               text-black"
-            >
-              Submit
-            </button>
-          </div>
-        </form>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
