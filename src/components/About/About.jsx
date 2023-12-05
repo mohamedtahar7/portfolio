@@ -7,7 +7,7 @@ const About = () => {
         <div className="md:block flex justify-center">
           <img
             className="lg:w-[1024px] sm:w-[80%] rounded-xl"
-            src="/src/assets/about-laptop.png"
+            src="https://i.postimg.cc/3JFScMqs/about-laptop.png"
             alt="laptop on a table"
           />
         </div>

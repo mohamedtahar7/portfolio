@@ -29,49 +29,49 @@ const Hero = () => {
                 className="hover:-translate-y-2 transition-all"
                 height={40}
                 width={40}
-                src="/src/assets/stack/html-5.png"
+                src="https://i.postimg.cc/PrRrg70q/html-5.png"
                 alt="html icon"
               />
               <img
                 className="hover:-translate-y-2 transition-all"
                 height={40}
                 width={40}
-                src="/src/assets/stack/css-3.png"
+                src="https://i.postimg.cc/zvDGNYJy/css-3.png"
                 alt="css icon"
               />
               <img
                 className="hover:-translate-y-2 transition-all"
                 height={40}
                 width={40}
-                src="/src/assets/stack/js.png"
+                src="https://i.postimg.cc/44w35y5V/js.png"
                 alt="javascript icon"
               />
               <img
                 className="hover:-translate-y-2 transition-all"
                 height={40}
                 width={40}
-                src="/src/assets/stack/reactjs.png"
+                src="https://i.postimg.cc/N01srjFy/reactjs.png"
                 alt="react js icon"
               />
               <img
                 className="hover:-translate-y-2 transition-all"
                 height={40}
                 width={40}
-                src="/src/assets/stack/nextjs.png"
+                src="https://i.postimg.cc/Vv7LLZ6D/nextjs.png"
                 alt="next js icon"
               />
               <img
                 className="hover:-translate-y-2 transition-all"
                 height={42}
                 width={42}
-                src="/src/assets/stack/node.png"
+                src="https://i.postimg.cc/K83vxNyD/node.png"
                 alt="node js icon"
               />
               <img
                 className="hover:-translate-y-2 transition-all"
                 height={40}
                 width={40}
-                src="/src/assets/stack/tailwindcss.png"
+                src="https://i.postimg.cc/V6Wk2kcy/tailwindcss.png"
                 alt="tailwind icon"
               />
             </div>
