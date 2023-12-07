@@ -3,7 +3,7 @@ export const projects = [
     img: "https://i.postimg.cc/fRrJMNYz/omnifood2.png",
     name: "Omnifood 🍔🥗",
     description:
-      "Eat healthy food again. Tailored to your personal tastes and nutritional needs.",
+      "Eat healthy food. Tailored to your personal tastes and nutritional needs.",
     link: "https://omnifood-mohamed-tahar.netlify.app/",
     category: "Landing Pages",
   },
