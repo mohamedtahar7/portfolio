@@ -5,7 +5,13 @@ const CategoryFeed = ({ projects, category }) => {
       {projects.filter((project) => project.category === category) ? (
         projects
           .filter((project) => project.category === category)
-          .map((project, index) => <Card key={index} project={project} />)
+          .map((project, index) => (
+            <Card
+              initial={index % 2 === 0 ? -50 : 50}
+              key={index}
+              project={project}
+            />
+          ))
       ) : (
         <h1 className="text-white text-center text-3xl font-medium">
           No Videos Found

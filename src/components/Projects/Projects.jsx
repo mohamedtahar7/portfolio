@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "../Card/Card";
 import { useState } from "react";
+import { motion } from "framer-motion";
 import { projects } from "../../utils/projects";
 import { categories } from "../../utils/categories";
 import CategoryFeed from "../CategoryFeed";
@@ -8,10 +9,20 @@ const Projects = () => {
   const [category, setCategory] = useState("All");
   return (
     <section id="projects" className="py-12 sm:px-20 md:px-28 px-10">
-      <h1 className="text-blue-500 font-bold uppercase text-center text-3xl">
+      <motion.h1
+        whileInView={{ y: 0, opacity: 100 }}
+        initial={{ y: -50, opacity: 0 }}
+        transition={{ duration: 0.5 }}
+        className="text-blue-500 font-bold uppercase text-center text-3xl"
+      >
         My Projects
-      </h1>
-      <div className="flex md:flex-row flex-col items-center justify-center gap-6 mt-6">
+      </motion.h1>
+      <motion.div
+        whileInView={{ x: 0, opacity: 100 }}
+        initial={{ x: -50, opacity: 0 }}
+        transition={{ duration: 0.5 }}
+        className="flex md:flex-row flex-col items-center justify-center gap-6 mt-6"
+      >
         <h3 className="text-xl text-black">Filter :</h3>
         <select
           onChange={(e) => {
@@ -33,11 +44,11 @@ const Projects = () => {
             </option>
           ))}
         </select>
-      </div>
+      </motion.div>
       {category === "All" && (
         <div className="mt-8 flex flex-col gap-4">
           {projects.map((project, id) => (
-            <Card project={project} />
+            <Card initial={id % 2 === 0 ? -50 : 50} project={project} />
           ))}
         </div>
       )}

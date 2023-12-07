@@ -1,10 +1,16 @@
 import { Link } from "lucide-react";
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
-const Card = ({ project }) => {
+import { motion } from "framer-motion";
+const Card = ({ project, initial }) => {
   const { name, link, img, description } = project;
   return (
-    <div className="flex shadow-lg lg:flex-row flex-col gap-10 items-center bg-white rounded-xl py-6 px-10">
+    <motion.div
+      whileInView={{ x: 0, opacity: 100 }}
+      initial={{ x: initial, opacity: 0 }}
+      transition={{ duration: 0.8 }}
+      className="flex shadow-lg lg:flex-row flex-col gap-10 items-center bg-white rounded-xl py-6 px-10"
+    >
       <a
         href={link}
         className="hover:opacity-80 md:w-[60%] transition"
@@ -23,7 +29,7 @@ const Card = ({ project }) => {
           Live Demo <Link className="w-5 h-5" />
         </a>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -5,6 +5,7 @@ import Input from "../Input";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 import { Mail } from "lucide-react";
+import { motion } from "framer-motion";
 const Contact = () => {
   const form = useRef();
   const sendEmail = (e) => {
@@ -29,11 +30,28 @@ const Contact = () => {
   };
   return (
     <section id="contact" className="md:px-28 bg-white px-10 sm:py-16">
-      <h1 className="uppercase text-blue-500 font-bold text-lg">Contact</h1>
-      <h2 className="uppercase text-[#2D2E32] font-bold text-xl mt-4">
+      <motion.h1
+        whileInView={{ x: 0, opacity: 100 }}
+        initial={{ x: -50, opacity: 0 }}
+        transition={{ duration: 0.5 }}
+        className="uppercase text-blue-500 font-bold text-lg"
+      >
+        Contact
+      </motion.h1>
+      <motion.h2
+        whileInView={{ x: 0, opacity: 100 }}
+        initial={{ x: 50, opacity: 0 }}
+        transition={{ duration: 0.5 }}
+        className="uppercase text-[#2D2E32] font-bold text-xl mt-4"
+      >
         Feel free to reach out! Don't hesitate to get in touch! 👇
-      </h2>
-      <div className="mt-4">
+      </motion.h2>
+      <motion.div
+        whileInView={{ y: 0, opacity: 100 }}
+        initial={{ y: 50, opacity: 0 }}
+        transition={{ duration: 0.5 }}
+        className="mt-4"
+      >
         <div className="flex items-center gap-5">
           <div className="p-4 shadow-md w-fit rounded-full bg-white">
             <Mail className="text-blue-500 h-8 w-8" />
@@ -43,7 +61,7 @@ const Contact = () => {
             <h3 className="text-md text-[#767676]">mohamedtaahar@gmail.com</h3>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

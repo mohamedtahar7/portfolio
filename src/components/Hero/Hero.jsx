@@ -3,6 +3,7 @@ import Coding from "../../assets/coding.svg";
 import { AiFillHtml5 } from "react-icons/ai";
 import { IoLogoCss3 } from "react-icons/io";
 import { TbDownload } from "react-icons/tb";
+import { motion } from "framer-motion";
 import { SiTailwindcss, SiJavascript, SiReact } from "react-icons/si";
 const Hero = () => {
   return (
@@ -12,15 +13,30 @@ const Hero = () => {
     >
       <div className="hero md:flex-row flex-col flex items-center gap-5 py-24 sm:py-24 md:px-28 px-10">
         <div className="sm:w-[50vw]">
-          <h1 className="text-[3.4rem] text-[#2d2e32] font-bold leading-tight">
+          <motion.h1
+            whileInView={{ x: 0, opacity: 100 }}
+            initial={{ x: -50, opacity: 0 }}
+            transition={{ duration: 0.5 }}
+            className="text-[3.4rem] text-[#2d2e32] font-bold leading-tight"
+          >
             Full-Stack Web <br />
             Developer 👋
-          </h1>
-          <h4 className="mt-4 leading-10 text-gray-700 text-2xl font-normal">
+          </motion.h1>
+          <motion.h4
+            whileInView={{ x: 0, opacity: 100 }}
+            initial={{ x: -50, opacity: 0 }}
+            transition={{ duration: 0.5 }}
+            className="mt-4 leading-10 text-gray-700 text-2xl font-normal"
+          >
             Hi, I'm Mohamed Tahar Atallah. A passionate <br /> Web Developer
             based in Algeria.
-          </h4>
-          <div className="flex mt-5 items-center flex-col sm:flex-row gap-5 sm:gap-3">
+          </motion.h4>
+          <motion.div
+            whileInView={{ x: 0, opacity: 100 }}
+            initial={{ x: -50, opacity: 0 }}
+            transition={{ duration: 0.5 }}
+            className="flex mt-5 items-center flex-col sm:flex-row gap-5 sm:gap-3"
+          >
             <h1 className="text-md text-[#2d2e32] sm:text-lg font-medium">
               Tech Stack |{" "}
             </h1>
@@ -75,7 +91,7 @@ const Hero = () => {
                 alt="tailwind icon"
               />
             </div>
-          </div>
+          </motion.div>
         </div>
         <div className="">
           <img
