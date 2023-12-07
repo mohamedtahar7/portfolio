@@ -1,6 +1,6 @@
 export const projects = [
   {
-    img: "/src/assets/projects/omnifood2.PNG",
+    img: "https://i.postimg.cc/fRrJMNYz/omnifood2.png",
     name: "Omnifood 🍔🥗",
     description:
       "Eat healthy food again. Tailored to your personal tastes and nutritional needs.",
