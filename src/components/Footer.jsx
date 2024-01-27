@@ -1,4 +1,5 @@
 import React from "react";
+import { Github, Linkedin, Instagram, Youtube } from "lucide-react";
 import { BsGithub, BsLinkedin, BsInstagram } from "react-icons/bs";
 const Footer = () => {
   return (
@@ -9,19 +10,22 @@ const Footer = () => {
         </div>
         <div className="flex gap-8 pb-8 items-center justify-center">
           <a href="https://github.com/mohamedtahar7" target="_blank">
-            <BsGithub
-              size={40}
-              className="text-[#f7f7f7] hover:text-[#b7b7b7] transition "
-            />
+            <Github className="h-10 w-10 text-[#f7f7f7] hover:text-[#b7b7b7] transition " />
           </a>
           <a
             href="https://www.linkedin.com/in/mohamed-tahar-atallah-936b50243/"
             target="_blank"
           >
-            <BsLinkedin
-              size={40}
-              className="text-[#f7f7f7] hover:text-[#b7b7b7] transition "
-            />
+            <Linkedin className="text-[#f7f7f7] h-10 w-10 hover:text-[#b7b7b7] transition " />
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UCJwMzw-P28GALUY6EUhAmjQ"
+            target="_blank"
+          >
+            <Youtube className="text-[#f7f7f7] h-11 w-11 hover:text-[#b7b7b7] transition " />
+          </a>
+          <a href="https://www.instagram.com/mohamed.taahar/" target="_blank">
+            <Instagram className="text-[#f7f7f7] h-10 w-10 hover:text-[#b7b7b7] transition " />
           </a>
         </div>
       </div>
