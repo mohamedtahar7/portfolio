@@ -9,9 +9,6 @@ const Footer = () => {
           <h1 className="text-[#f7f7f7] text-4xl text-center">Follow Me</h1>
         </div>
         <div className="flex gap-8 pb-8 items-center justify-center">
-          <a href="https://github.com/mohamedtahar7" target="_blank">
-            <Github className="h-10 w-10 text-[#f7f7f7] hover:text-[#b7b7b7] transition " />
-          </a>
           <a
             href="https://www.linkedin.com/in/mohamed-tahar-atallah-936b50243/"
             target="_blank"
