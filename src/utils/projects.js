@@ -25,7 +25,7 @@ export const projects = [
     img: "https://i.postimg.cc/Px6VK05W/uniconfort.png",
     name: "Uniconfort 🪑🛒",
     description: "Get The Most Comfortable Furniture with Uniconfort.",
-    link: "https://uniconfortmeuble.store",
+    link: "https://new-uniconfort.vercel.app/",
     category: "Ecommerce Websites",
   },
 ];
