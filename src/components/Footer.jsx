@@ -1,6 +1,5 @@
 import React from "react";
 import { Github, Linkedin, Instagram, Youtube } from "lucide-react";
-import RiTiktokLine from "react-icons/ri";
 const Footer = () => {
   return (
     <footer className="sm:px-28 mt-5 px-10 bg-[#2d2e32]">
@@ -16,10 +15,10 @@ const Footer = () => {
             <Linkedin className="text-[#f7f7f7] h-10 w-10 hover:text-[#b7b7b7] transition " />
           </a>
           <a
-            href="https://www.youtube.com/channel/UCJwMzw-P28GALUY6EUhAmjQ"
+            href="https://www.linkedin.com/in/mohamed-tahar-atallah-936b50243/"
             target="_blank"
           >
-            <RiTiktokLine className="text-[#f7f7f7] h-11 w-11 hover:text-[#b7b7b7] transition " />
+            <Youtube className="text-[#f7f7f7] h-10 w-10 hover:text-[#b7b7b7] transition " />
           </a>
           <a href="https://www.instagram.com/mohamed.taahar/" target="_blank">
             <Instagram className="text-[#f7f7f7] h-10 w-10 hover:text-[#b7b7b7] transition " />
