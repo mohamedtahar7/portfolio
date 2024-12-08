@@ -4,6 +4,7 @@ import { AiFillHtml5 } from "react-icons/ai";
 import { IoLogoCss3 } from "react-icons/io";
 import { TbDownload } from "react-icons/tb";
 import { motion } from "framer-motion";
+import me from "../../assets/me2.png";
 import { SiTailwindcss, SiJavascript, SiReact } from "react-icons/si";
 const Hero = () => {
   return (
@@ -93,13 +94,18 @@ const Hero = () => {
             </div>
           </motion.div>
         </div>
-        <div className="">
+        <motion.div
+          whileInView={{ x: 0, opacity: 100 }}
+          initial={{ x: -50, opacity: 0 }}
+          transition={{ duration: 0.5 }}
+          className=""
+        >
           <img
-            className="sm:w-[520px] w-[640px] lg:block hidden"
-            src={Coding}
-            alt="conding illustration"
+            className="sm:w-[380px] w-[640px] rounded-full lg:block "
+            src={me}
+            alt="Mohamed Tahar"
           />
-        </div>
+        </motion.div>
       </div>
     </section>
   );

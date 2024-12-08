@@ -26,7 +26,7 @@ const Footer = () => {
         </div>
       </div>
       <h2 className="text-center text-[#f7f7f7] p-6 shadow-2xl text-2xl">
-        2023 Mohamed Tahar. All Rights Reserved.
+        2025 Mohamed Tahar. All Rights Reserved.
       </h2>
     </footer>
   );
